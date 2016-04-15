@@ -1,6 +1,8 @@
 # Description
 
-A Node.js app that connects the Yotpo reviews API with the Shopify API so that webstores can easily access all their product review data.
+A Node.js app that connects the Yotpo reviews API with the Shopify API so that webstores can easily access all their product review data. 
+
+*** This repo is under construction ***
 
 # Setup
 
