@@ -1,31 +1,60 @@
-# Description
+# yotpo-seeder
 
-A Node.js app that connects the Yotpo reviews API with the Shopify API so that webstores can easily access all their product review data. 
+A simple Node.js Heroku app to write/retreive yotpo reviews and return JSON for full front-end control.
 
-*** This repo is under construction ***
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-# Setup
-
-Install nodemon globally on your system
+## Routes
 
 ```
-npm install -g nodemon
+.../yotpo-fetch
 ```
 
-Set up an app server with Heroku @ https://www.heroku.com
+This route is used for retreiving yotpo reviews. When this route is used with no querystring parameters, all yotpo reviews for the account are retreieved. 
+
+
+```
+.../yotpo-fetch?pid=1234567
+```
+
+This route can take one optional querystring parameter - 'pid'. The 'pid' parameter stands for 'product id' and is used for retreiving reviews of a single product.
+
+*OR*
+
+```
+.../yotpo-add
+```
+
+This route is used for creating reviews for a single product. This route has many query string parameters, some are required and others are not.
+
+*REQUIRE QUERYSTRING PARAMETERS*:
+*product_id*: Specifies a unique product ID to add this review to.
+*product_title*: The title of the product.
+*display_name*: The reviewer's name.
+*email*: The email of the reviewer.
+*review_content*: The content of the review.
+*review_title*: The title of the review.
+*review_score*: The review score.
+
+*OPTIONAL QUERYSTRING PARAMETERS*:
+*product_description*: The description of the product.
+*product_image_url*: The url of the product image.
+
+More app usage examples and details can be found at the at homepage route (http://localhost:5000/). 
+
 
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone https://github.com/dlerm/yotpo-seeder.git
+$ cd yotpo-seeder
 $ npm install
-$ npm start
+$ heroku local web
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Your app should now be running on [localhost:5000](http://localhost:5000/). App usage details can also be found on the app homepage.
 
 ## Deploying to Heroku
 

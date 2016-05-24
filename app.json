@@ -1,7 +1,7 @@
 {
-  "name": "Node.js Getting Started",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "name": "Yotpo Seeder",
+  "description": "A simple heroku app to write/retreive yotpo reviews and return JSON for full front-end control",
+  "repository": "https://github.com/dlerm/yotpo-seeder",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["node", "express", "static"],
   "image": "heroku/nodejs"
