@@ -1,8 +1,27 @@
 # yotpo-seeder
 
-A simple Node.js Heroku app to write/retreive yotpo reviews and return JSON for full front-end control.
+A simple Node.js Heroku app to write/retreive yotpo reviews and return JSON for full front-end control with custom descriptive error handling.
 
 This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+
+## Yotpo Configuration
+
+In order to have this app successfully interact with Yotpo, your Yotpo account details will be needed. Log into your Yotpo account and find the following details and add them to the '.env' file:
+
+client_id
+```
+CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxx
+```
+
+client_secret
+```
+CLIENT_SECRET=xxxxxxxxxxxxxxxxxxxxxxx
+```
+
+You can optionally set the review_count variable to set the number of reviews to return(only for single product reviews).
+```
+REVIEWS_COUNT=x
+```
 
 ## Routes
 
@@ -60,6 +79,29 @@ product_image_url: The url of the product image.
 
 More app usage examples and details can be found at the at homepage route [localhost:5000](http://localhost:5000/). 
 
+## Requesting Data from the Front-End
+
+In order to get the JSON reviews data into the Front-End, we must use some AJAX calls to our app. I will be using jQuery in my examples.
+
+1) Build the app route url:
+```
+var product_id = 1234567;
+var appURL = '//your-heroku-app-name.herokuapp.com/yotpo-fetch?pid=' + product_id;
+```
+
+2) Make the GET request:
+```
+var appRequest = $.get(appURL)
+.fail(function() {
+  //Handle request failure
+})
+.done(function(reviewsJSON) {
+  //Success, now do something with the reviewsJSON object
+})
+.always(function() {
+  //Request Finished (Success or Failure)
+});
+```
 
 ## Running Locally
 
