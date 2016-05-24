@@ -27,18 +27,36 @@ This route can take one optional querystring parameter - 'pid'. The 'pid' parame
 
 This route is used for creating reviews for a single product. This route has many query string parameters, some are required and others are not.
 
-*REQUIRE QUERYSTRING PARAMETERS*:
+REQUIRE QUERYSTRING PARAMETERS:
+```
 *product_id*: Specifies a unique product ID to add this review to.
+```
+```
 *product_title*: The title of the product.
+```
+```
 *display_name*: The reviewer's name.
+```
+```
 *email*: The email of the reviewer.
+```
+```
 *review_content*: The content of the review.
+```
+```
 *review_title*: The title of the review.
+```
+```
 *review_score*: The review score.
+```
 
-*OPTIONAL QUERYSTRING PARAMETERS*:
+OPTIONAL QUERYSTRING PARAMETERS:
+```
 *product_description*: The description of the product.
+```
+```
 *product_image_url*: The url of the product image.
+```
 
 More app usage examples and details can be found at the at homepage route (http://localhost:5000/). 
 
