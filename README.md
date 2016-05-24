@@ -19,7 +19,7 @@ This route is used for retreiving yotpo reviews. When this route is used with no
 
 This route can take one optional querystring parameter - 'pid'. The 'pid' parameter stands for 'product id' and is used for retreiving reviews of a single product.
 
-*OR*
+OR
 
 ```
 .../yotpo-add
@@ -27,38 +27,38 @@ This route can take one optional querystring parameter - 'pid'. The 'pid' parame
 
 This route is used for creating reviews for a single product. This route has many query string parameters, some are required and others are not.
 
-REQUIRE QUERYSTRING PARAMETERS:
+REQUIRED QUERYSTRING PARAMETERS:
 ```
-*product_id*: Specifies a unique product ID to add this review to.
-```
-```
-*product_title*: The title of the product.
+product_id: Specifies a unique product ID to add this review to.
 ```
 ```
-*display_name*: The reviewer's name.
+product_title: The title of the product.
 ```
 ```
-*email*: The email of the reviewer.
+display_name: The reviewer's name.
 ```
 ```
-*review_content*: The content of the review.
+email: The email of the reviewer.
 ```
 ```
-*review_title*: The title of the review.
+review_content: The content of the review.
 ```
 ```
-*review_score*: The review score.
+review_title: The title of the review.
+```
+```
+review_score: The review score.
 ```
 
 OPTIONAL QUERYSTRING PARAMETERS:
 ```
-*product_description*: The description of the product.
+product_description: The description of the product.
 ```
 ```
-*product_image_url*: The url of the product image.
+product_image_url: The url of the product image.
 ```
 
-More app usage examples and details can be found at the at homepage route (http://localhost:5000/). 
+More app usage examples and details can be found at the at homepage route [localhost:5000](http://localhost:5000/). 
 
 
 ## Running Locally
