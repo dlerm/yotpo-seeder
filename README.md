@@ -23,6 +23,8 @@ You can optionally set the review_count variable to set the number of reviews to
 REVIEWS_COUNT=x
 ```
 
+*** When this is done, make sure to update your .gitignore to no longer track the '.env' file ***
+
 ## Routes
 
 ```
