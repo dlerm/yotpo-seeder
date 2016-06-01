@@ -8,6 +8,7 @@
   <body>
     <div class="container">
       <h1>Welcome to the <span>Yotpo Feeder</span></h1>
+      <h5>By: <a href="https://github.com/dlerm/yotpo-seeder" target="_blank">Daniel Lerman</a></h5>
       <div class="options">
         <h2>Routes:</h2><br/>
         <div class="single-route fetch" id="fetch">
@@ -25,7 +26,7 @@
             <p class="heading">Query Parameters:</p>
             <p><strong>*product_id:</strong> Specifies a unique product ID to add this review to. <div class="usage">/yotpo-add?product_id=1234567&...</div></p>
             <p><strong>*product_title:</strong> The title of the product. <div class="usage">/yotpo-add?product_title=title goes here&...</div></p>
-            <p><strong>*display_name:</strong> The reviewer\'s name. <div class="usage">/yotpo-add?display_name=John Testerson&...</div></p>
+            <p><strong>*display_name:</strong> The reviewer's name. <div class="usage">/yotpo-add?display_name=John Testerson&...</div></p>
             <p><strong>*email:</strong> The email of the reviewer. <div class="usage">/yotpo-add?email=example@website.com&...</div></p>
             <p><strong>*review_content:</strong> The content of the review. <div class="usage">/yotpo-add?review_content=I love this product&...</div></p>
             <p><strong>*review_title:</strong> The title of the review. <div class="usage">/yotpo-add?review_title=This is my review title&...</div></p>
@@ -45,13 +46,7 @@
 <script>
   $(document).ready(function() {
     $('.single-route h4').click(function() {
-     var $currentQueryBox = $(this).parent().find('.query-details');
-     $('.query-details').slideUp();
-     if( $currentQueryBox.is(':visible') ){
-      $currentQueryBox.slideUp();
-     } else {
-      $currentQueryBox.slideDown();
-     }
+     $(this).siblings('.query-details').slideToggle();
     });
   });
 </script>

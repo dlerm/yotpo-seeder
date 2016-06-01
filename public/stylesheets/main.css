@@ -1,13 +1,15 @@
- body{ text-transform:uppercase; background: #000040; color: #ccc; font-size: 14px; font-family:monospace; padding: 0 10px; box-sizing:border-box;}
- body *{ box-sizing:border-box;}
- .container{ width: 620px; max-width: 100%; margin: 0 auto;}
- h1{ color: #f6f6f6; margin: 0; padding: 20px 0;}
- h2{ margin-left: 10px;color: #f6f6f6; border-top: 1px solid #fff; display: inline-block; position: relative; padding-right: 20px;}
- h2:after{ content:'';border-top: 13px solid transparent; border-bottom: 13px solid transparent; border-left: 13px solid #fff; display:inline-block; position: absolute; right:-13px; top: -1px;}
- h4{ cursor:pointer; color:#66CD00; padding: 10px 0 10px 10px; margin: 0; background: linear-gradient(to right,#000, transparent);; border-radius:0 10px 10px 0;}
- .single-route{ vertical-align:top;padding: 10px 20px; border-left: 3px solid #66CD00; display: inline-block; width:calc(100% - 20px);background: rgba(255,255,255,.1); margin: 0 0 20px 0; border-radius: 0 10px 10px 0; margin-left:10px;}
- p { font-family:sans-serif; text-transform: none; margin-bottom: 5px;}
- .heading{ color: #fff; font-family: monospace; text-transform: uppercase; }
- strong{ letter-spacing: 1px; text-transform: uppercase; color: #fff;}
- .usage{ margin-bottom: 20px; display:inline-block; background:rgba(255,255,255,0.3); color:#fff; padding:10px; text-transform: none; word-break: break-all;}
- small{ color: #66CD00; }
+body{ text-transform:uppercase; background: #000040; color: #ccc; font-size: 14px; font-family:monospace; padding: 0 10px; box-sizing:border-box;}
+body *{ box-sizing:border-box;}
+.container{ width: 620px; max-width: 100%; margin: 0 auto;}
+h1{ color: #f6f6f6; margin: 0; padding: 20px 0 0;}
+h2{color: #f6f6f6; border-top: 1px solid #fff; display: inline-block; position: relative; padding-right: 20px;}
+h2:after{ content:'';border-top: 13px solid transparent; border-bottom: 13px solid transparent; border-left: 13px solid #fff; display:inline-block; position: absolute; right:-13px; top: -1px;}
+h4{ cursor:pointer; color:#66CD00; padding: 10px 0 10px 10px; margin: 0; background: linear-gradient(to right,#000, transparent);; border-radius:0 10px 10px 0;}
+h5{margin:0;  letter-spacing: 1px; font-size: 1em;}
+h5 a {color:#66CD00;}
+.single-route{ vertical-align:top;padding: 10px 20px; border-left: 3px solid #66CD00; display: inline-block; width:calc(100% - 20px);background: rgba(255,255,255,.1); margin: 0 0 20px 0; border-radius: 0 10px 10px 0;}
+p { font-family:sans-serif; text-transform: none; margin-bottom: 5px;}
+.heading{ color: #fff; font-family: monospace; text-transform: uppercase; }
+strong{ letter-spacing: 1px; text-transform: uppercase; color: #fff;}
+.usage{ margin-bottom: 20px; display:inline-block; background:rgba(255,255,255,0.3); color:#fff; padding:10px; text-transform: none; word-break: break-all;}
+small{ color: #66CD00; }
