@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var http    = require('http');
-var rp      = require('request-promise');
+var rp      = require('request-promise'); 
 
 router.get('/', function(request, response) {
   response.header("Access-Control-Allow-Origin", "*");
