@@ -6,7 +6,6 @@
   * window.yotpoApp = { 
   *   "productId": "{{ product.id }}",
   *   "productTitle": "{{ product.title }}", 
-  *   "shopUrl": "{{ shop.url }}",
   *   "reviewsEntryPoint": ".reviews-entry-point",
   *   "avgRatingEntryPoint": ".avg-review-stars",
   *   "herokuAppName": "sample-client-app"
