@@ -1,4 +1,4 @@
-<div class="watch-pdp-container reviews-section" id="scrollReviews">
+<div class="reviews-section">
   <section class="container container--large yotpo-slider">
     <div class="avg-review-stars"></div>
     <h2><span class="num-reviews"></span> Customer Reviews</h2>
@@ -40,8 +40,7 @@
 <script>
   window.yotpoApp = { 
     "productId": "{{ product.id }}",
-    "productTitle": "{{ product.title }}", 
-    "shopUrl": "{{ shop.url }}",
+    "productTitle": "{{ product.title }}",
     "reviewsEntryPoint": ".all-reviews-entry-point",
     "avgRatingEntryPoint": ".avg-review-stars",
     "herokuAppName": "sample-client-app"
