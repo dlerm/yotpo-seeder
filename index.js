@@ -1,10 +1,9 @@
-//Required Dependencies
-//=================================================// 
+/* Required Dependencies */
+/*========================================*/
 var express = require('express');
 var app     = express();
 
 app.set('port', (process.env.PORT || 5000));
-
 app.use(express.static(__dirname + '/public'));
 
 /*========================================*/
@@ -26,6 +25,12 @@ app.use('/yotpo-fetch', yotpoFetch);
 /*========================================*/
 var yotpoAdd = require('./routes/yotpoAdd');
 app.use('/yotpo-add', yotpoAdd);
+
+/*========================================*/
+/* ADDING CLIENTS
+/*========================================*/
+var clientAdd = require('./routes/clientAdd');
+app.use('/client-add', clientAdd);
 
 
 app.listen(app.get('port'), function() {
