@@ -1,0 +1,135 @@
+body{ text-transform:uppercase; background: #000040; color: #ccc; font-size: 14px; padding: 0 10px; box-sizing:border-box;  font-family: 'ProximaNova','Arial Black',sans-serif; font-weight: normal; letter-spacing: 0.5px;}
+
+body *{ box-sizing:border-box;}
+
+p {font-family: 'ProximaNova','Arial Black',sans-serif; font-weight: normal; letter-spacing: 0.5px;}
+
+.container{ width: 900px; max-width: 100%; margin: 0 auto;}
+
+h1{ color: #f6f6f6; margin: 0; padding: 20px 0 0; font-size: 2.3em;}
+
+h2{color: #f6f6f6; display: inline-block; position: relative;}
+
+.flex{ display: flex; flex-wrap: wrap; flex-direction:row;}
+
+h2.flex{ justify-content: space-between; align-items:flex-end;}
+
+a.btn{ display: inline-block; color: #000040;; background: #55f;  padding: 10px; font-size: 0.8em; transition: all .3s ease-in-out;}
+a.btn:hover{ color: #fff; }
+
+h4{ font-size: 1.3em; color:#55f; padding: 10px 0; margin: 0; border-radius:0 10px 10px 0; transition: all .3s ease-in-out;}
+
+h5{margin:0;  letter-spacing: 1px; font-size: 1em;}
+
+h5 a {color:#55f;}
+
+.route-wrap{ display: flex; flex-wrap: wrap; flex-direction:row; justify-content: space-between; align-items:flex-start;}
+
+.single-route{ width: 100%; max-width: 100%; flex-basis: 100%; vertical-align:top;padding: 10px 20px; border-top: 3px solid #55f; background: rgba(255,255,255,.1); margin: 0 0 20px 0; }
+
+p { font-family:sans-serif; text-transform: none; margin-bottom: 5px;}
+
+.heading{ color: #fff; }
+
+strong{ letter-spacing: 1px; text-transform: uppercase; color: #fff; }
+strong span{ color: #55f; letter-spacing: 2px; font-size: 18px;}
+
+.usage{ margin-bottom: 20px; display:inline-block; background:rgba(255,255,255,0.15); color:#fff; padding:10px; text-transform: none; word-break: break-all; font-family: monospace;}
+
+small{ color: #55f; }
+
+a{text-decoration:none; color: inherit;}
+
+/* CLIENT ADD FORM */
+.new-client{
+
+}
+#add-client{
+  display: block;
+}
+#add-client label{
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+#add-client label .note{
+  margin-top: 15px;
+  color: #fff;
+  font-size: 13px;
+  color:#55f;
+}
+#add-client input{
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+  padding: 10px;
+  background:rgba(255,255,255,0.15);
+  border: 0;
+  border-bottom: 5px solid #fff;
+  outline: none;
+}
+#add-client input:focus{
+ 
+  border-bottom: 5px solid #55f;
+}
+
+#add-client button{
+  width: 100%;
+  background: #55f;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  height: 40px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  cursor: pointer;
+  opacity: 0.7;
+  font-family: 'ProximaNova','Arial Black',sans-serif;
+  letter-spacing: 1px;
+}
+#add-client button:hover{
+  opacity: 1;
+}
+
+hr{
+  border-color: #55f;
+}
+
+.notes{
+  padding: 20px 0;
+}
+
+.notes p{
+  font-family: 'ProximaNova','Arial Black',sans-serif;
+  text-transform: uppercase;
+  color: #55f;
+}
+
+.notes span{
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot'); 
+  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Gotham-Bold.woff') format('woff'), 
+       url('../fonts/Gotham-Bold.ttf')  format('truetype'), 
+       url('../fonts/Gotham-Bold.svg#6a327a217ddd10461b1acdc4d224fee0') format('svg'),
+       url('../fonts/Gotham-Bold.otf') format('opentype');
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.otf') format('opentype');
+       
+  font-style:   normal;
+  font-weight:  700;
+}

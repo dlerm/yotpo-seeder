@@ -1,0 +1,8 @@
+{
+  "name": "Yotpo Seeder",
+  "description": "👾 A simple node express middleware API between the front-end and the Yotpo Rest API",
+  "repository": "https://github.com/dlerm/yotpo-seeder",
+  "logo": "https://github.com/dlerm/yotpo-seeder/blob/master/public/favicon.ico",
+  "keywords": ["yotpo", "reviews", "questions", "node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "yotpo-seeder",
+  "version": "2.0.0",
+  "description": "👾 A simple node express middleware API between the front-end and the Yotpo Rest API",
+  "engines": {
+    "node": "11.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlerm/yotpo-seeder.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,79 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Yotpo Seeder</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="/">Yotpo Seeder</a></h1>
+      <h5>By: <a href="https://github.com/dlerm/yotpo-seeder" target="_blank">Daniel Lerman</a></h5>
+      <div class="options">
+        <h2 class="flex"><span>Routes:</span> <a href="/client-add" class="btn" title="Add Client" data-dialogue="Feature coming soon.">Add Client</a></h2><br/>
+        <div class="route-wrap">
+          <div class="single-route fetch" id="fetch">
+            <h4>/yotpo-fetch</h4>
+            <small>* required field</small>
+            <div class="query-details" >
+              <p class="heading">Query Parameters:</p>
+              <p><strong><span>*</span>shop:</strong> 
+                Specifies the shop url to retrive reviews for. Use liquid's <strong>{{shop.url}}</strong>
+                <div class="usage">/yotpo-fetch?shop=exampleshop.com.</div>
+              </p>
+              <p><strong>pid:</strong> 
+                Specifies a specific product ID to retieve reviews for. Use liquid's <strong>{{product.id}}</strong>
+                <div class="usage">/yotpo-fetch?pid=1234567.</div>
+              </p>
+            </div>
+          </div>
+          <div class="single-route add" id="add">
+            <h4>/yotpo-add</h4>
+            <small>* required field</small>
+            <div class="query-details" >
+              <p class="heading">Query Parameters:</p>
+              <p><strong><span>*</span>product_id:</strong> 
+                Specifies a unique product ID to add this review to. Use liquid's <strong>{{product.id}}</strong>
+                <div class="usage">/yotpo-add?product_id=1234567&...</div>
+              </p>
+              <p><strong><span>*</span>product_title:</strong> 
+                The title of the product. Use liquid's <strong>{{product.title}}</strong>
+                <div class="usage">/yotpo-add?product_title=title goes here&...</div>
+              </p>
+              <p><strong><span>*</span>display_name:</strong>
+               The reviewer's name. 
+               <div class="usage">/yotpo-add?display_name=John Testerson&...</div>
+             </p>
+             <p><strong><span>*</span>email:</strong>
+               The email of the reviewer. 
+               <div class="usage">/yotpo-add?email=example@website.com&...</div>
+             </p>
+             <p><strong><span>*</span>review_content:</strong>
+               The content of the review. 
+               <div class="usage">/yotpo-add?review_content=I love this product&...</div>
+             </p>
+             <p><strong><span>*</span>review_title:</strong>
+               The title of the review. 
+               <div class="usage">/yotpo-add?review_title=This is my review title&...</div>
+             </p>
+             <p><strong><span>*</span>review_score:</strong>
+               The review score. 
+               <div class="usage">/yotpo-add?review_score=5&...</div>
+             </p>
+             <p><strong>product_description:</strong>
+              The description of the product. Use liquid's <strong>{{product.description}}</strong>
+               <div class="usage">/yotpo-add?product_description=Made from the finest materials.&...</div>
+             </p>
+             <p><strong>product_image_url:</strong>
+               The url of the product image. Use liquid's <strong>{{product.featured_image.src}}</strong>
+               <div class="usage">/yotpo-add?product_image_url=http://website.com/image.jpg&...</div>
+             </p>
+             <br/>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</body>
+</html>
