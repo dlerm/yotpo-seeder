@@ -25,11 +25,11 @@ Sample response:
       pagination: {
         page: 1,
         per_page: 100,
-        total: 300,
+        total: 300
       },
       bottomline: {
         total_review: 300,
-        average_score: 4.6,
+        average_score: 4.6
       },
       grouping_data: {...},
       products: [{...}],
@@ -57,10 +57,10 @@ Sample response:
       pagination: {
         page: 1,
         per_page: 100,
-        total: 30,
+        total: 30
       },
       bottomline: {
         total_questions: 30,
-        total_answers: 30,
+        total_answers: 30
       }
     }
